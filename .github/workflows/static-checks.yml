@@ -1,0 +1,9 @@
+name: Static Checks 📊
+on: [push, pull_request]
+jobs:
+  cpp-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: C/C++ Lint Action
+        uses: shenxianpeng/cpp-linter-action@v1.3.0
